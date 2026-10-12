@@ -95,38 +95,52 @@ pip install datasets pandas scikit-learn matplotlib
 
 ## How to Run
 
-### Option 1: Google Colab
+### Prerequisites
 
-1. Open [Google Colab](https://colab.research.google.com/).
-2. Upload or open the project notebook.
-3. Run the installation cell.
-4. Run the dataset loading and model training cells.
-5. Execute the prediction cell.
-6. Enter a sentence when prompted to analyse its sentiment.
+- Python 3.9 or later
+- Git
+- An active internet connection to download the dataset
 
-### Option 2: Local Environment
+### 1. Clone the Repository
 
-1. Clone the repository:
+```bash
+git clone <your-repository-url>
+cd <your-project-folder>
+```
 
-   ```bash
-   git clone <your-repository-url>
-   ```
+### 2. Install Dependencies
 
-2. Navigate to the project folder:
+```bash
+pip install datasets pandas scikit-learn matplotlib
+```
 
-   ```bash
-   cd <your-project-folder>
-   ```
+### 3. Run the Project
 
-3. Install the dependencies:
+```bash
+python sentiment_analysis.py
+```
 
-   ```bash
-   pip install datasets pandas scikit-learn matplotlib
-   ```
+### 4. Enter Your Text
 
-4. Open the notebook in Jupyter or run it in Google Colab.
+When prompted, enter a sentence to analyse its sentiment.
 
-The dataset is loaded from Hugging Face when the notebook runs, so an internet connection is required for the initial dataset download.
+Example:
+
+```text
+Enter a sentence: This phone has an amazing camera!
+```
+
+The program displays the estimated probabilities for Negative, Neutral, and Positive sentiments, followed by the predicted sentiment.
+
+### Alternative: Download from GitHub
+
+1. Open the repository on GitHub.
+2. Click **Code → Download ZIP**.
+3. Extract the ZIP file.
+4. Open a terminal in the extracted project folder.
+5. Install the dependencies and run the Python script using the commands above.
+
+**Note:** GitHub is used to host the project files. The Python script runs locally on your computer, not on GitHub's website.
 
 ## Limitations
 
